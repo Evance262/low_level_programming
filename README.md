@@ -1,0 +1,1 @@
+This a Hello World project in the ALX program. The project is about the basics of the C programming language.
