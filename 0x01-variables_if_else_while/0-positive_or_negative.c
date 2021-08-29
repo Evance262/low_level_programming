@@ -1,11 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-
-/* betty style doc for function main goes there */
+/**
+*main - Positive or Negative
+*/
 int main(void)
 {
+/**
+ * main - positive or negative
+ * Description: random numbers
+ * variable n has been assigned a random value
+ * return: 0
+ */
 int n;
 
 srand(time(0));
