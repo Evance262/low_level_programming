@@ -1,17 +1,13 @@
-#include <unistd.h>
+#include "holberton.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * reset_to_98 - takes a pointer to an int as parameter and updates
+ * the value it points to to 98
+ * @n: pointer to an int
+ * Return: Nothing
  */
-/**
- * prototype
- */
-void reset_to_98(int *n);
-int _putchar(char c)
+
+void reset_to_98(int *n)
 {
-return (write(1, &c, 1));
+	*n = 98;
 }
