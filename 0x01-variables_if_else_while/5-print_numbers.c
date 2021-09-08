@@ -7,11 +7,13 @@
 */
 int main(void)
 {
-char x;
-for (x = 'a'; x <= 'z'; x++)
+int n = 10;
+if (n > 0)
 {
-putchar(x);
+if (n < 10)
+{
+printf("%d\n");
 }
-putchar('\n');
+}
 return (0);
 }
