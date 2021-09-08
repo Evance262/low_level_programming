@@ -1,0 +1,6 @@
+This project is about
+     Nested while loops
+     C - Functions
+     Learning to Program in C
+     What is the purpose of a function prototype?
+     C - Header Files
