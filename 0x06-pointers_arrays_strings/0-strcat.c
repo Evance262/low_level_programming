@@ -10,10 +10,14 @@
 */
 char *_strcat(char *dest, char *src)
 {
-    char s1[98] = "Hello";
-    char s2[] = "world!\n";
-
-dest = s1;
-src = s2;
-return (0);
+unsigned int i = 0;
+unsigned int j = 0;
+while (*(dest + i) != '\0')
+i++;
+while (*(src + j) != '\0')	{
+*(dest + i) = *(src + j);
+i++;
+j++;
+}
+return (dest);
 }
