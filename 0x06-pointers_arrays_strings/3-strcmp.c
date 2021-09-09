@@ -1,25 +1,20 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * _strcat- function that copies a string.
+ * _strcmp - function that copies a string.
  *
- * @dest: pointer to destination char
- * @src: pointer to source char
+ * @s1: pointer to destination char
+ * @s2: pointer to source char
  * Return: char
  */
-char *_strncpy(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
-if (dest == NULL)
+while (*s1)
 {
-return NULL;
+if (*s1 != *s2)
+break;
+s1++;
+s2++;
 }
-char *ptr = dest;
-while (*src && n--)
-{
-*dest = *src;
-dest++;
-src++;
-}
-*dest = '\0';
-return ptr;
+return (*(const unsigned char *)s1 - *(const unsigned char *)s2);
 }
