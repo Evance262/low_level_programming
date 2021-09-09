@@ -1,10 +1,25 @@
+#include "holberton.h"
 #include <stdio.h>
-#include <string.h>
 /**
-* _strcmp - Compares pointers to two strings.
-* @s1: A pointer to the first string to compare.
-* @s2: A pointer to the second string to compare.
-*
-* Return: 0
-*/
-int _strcmp(char *s1, char *s2)
+ * _strcat- function that copies a string.
+ *
+ * @dest: pointer to destination char
+ * @src: pointer to source char
+ * Return: char
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+if (dest == NULL)
+{
+return NULL;
+}
+char *ptr = dest;
+while (*src && n--)
+{
+*dest = *src;
+dest++;
+src++;
+}
+*dest = '\0';
+return ptr;
+}
