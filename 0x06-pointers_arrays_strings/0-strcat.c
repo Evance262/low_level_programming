@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <string.h>
 /**
 * strcat - a function that concatenates two strings
 * @dest: A pointer to the string to be concatenated upon.
