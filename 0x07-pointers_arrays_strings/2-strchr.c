@@ -1,11 +1,13 @@
 #include "holberton.h"
 #include <string.h>
 /**
- * _strchr - function that locates a character in a string.
- * @s: where s is a string
- * @c: character on the first occurence
- * Returns: a pointer
-*/
+ *_strchr - function that locates a character in a string.
+ *@s: where s is a string
+ *@c: character on the first occurence
+ *
+ *Return: A pointer
+ */
+
 char *_strchr(char *s, char c)
 {
 int i = 0;
