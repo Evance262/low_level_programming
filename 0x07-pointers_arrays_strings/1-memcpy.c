@@ -5,7 +5,8 @@
  * area src to memory area dest
  * @dest: pointer to destination char
  * @src: pointer to source char
- * Returns a pointer to dest
+ * @n: The number of bytes to be filled.
+ * Returns: a pointer to @dest
 */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
