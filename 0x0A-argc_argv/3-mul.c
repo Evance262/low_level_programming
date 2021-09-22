@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include <stdlib.h>
 #include "holberton.h"
 /**
  * main - check the code
@@ -8,16 +9,20 @@
  *
  * Return: Always 0.
  */
-int main()
+int main(int argc, char *argv[])
+{int i, mul =0;
+if (argc > 1)
 {
-int num1,num2,product;
-if ((product = num1 * num2))
+for (i = 1; i < argc; i++)
 {
-printf("%d",product);
+mul = mul * atoi(argv[i]);
+}
+printf("%d\n", mul);
 }
 else
 {
-printf("Error");
+    printf("Error");
 }
+
 return (0);
 }

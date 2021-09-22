@@ -1,25 +1,26 @@
 #include<stdio.h>
+#include <stdlib.h>
+
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
-int main(void)
+int main(int argc, char *argv[])
+{int i, mul =0;
+if (argc > 1)
 {
-int n, i, num, sum = 0;
-i = 0;
-while (i < n)
+for (i = 1; i < argc; i++)
 {
-if (num >= 0)
-{
-sum = sum + num;
+mul += atoi(argv[i]);
+}
+printf("%d\n", mul);
 }
 else
 {
-printf("Error");
+    printf("Error\n");
+    return (1);
 }
-i++;
-}
-printf("%d", sum);
+
 return (0);
 }
