@@ -84,3 +84,13 @@ Project 0x13. C - More singly linked lists
         Prototype: size_t print_listint_safe(const listint_t *head);
         Returns: the number of nodes in the list
         This function can print lists with a loop
+
+    13. Free (safe version)
+        a function that frees a listint_t list.
+
+        Prototype: size_t free_listint_safe(listint_t **h);
+        This function can free lists with a loop
+        You should go though the list only once
+        Returns: the size of the list that was free’d
+
+        The function sets the head to NULL
