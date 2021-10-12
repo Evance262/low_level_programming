@@ -77,3 +77,10 @@ Project 0x13. C - More singly linked lists
 
         Prototype: listint_t *reverse_listint(listint_t **head);
         Returns: a pointer to the first node of the reversed list
+    
+    12. print (safe version)
+        a function that prints a listint_t linked list.
+
+        Prototype: size_t print_listint_safe(const listint_t *head);
+        Returns: the number of nodes in the list
+        This function can print lists with a loop
