@@ -69,3 +69,11 @@ Project 0x13. C - More singly linked lists
         where index is the index of the node that should be deleted. Index starts at 0
         Returns: 1 if it succeeded, -1 if it failed
 
+
+# Advanced Tasks
+
+    11. Reverse list
+        a function that reverses a listint_t linked list.
+
+        Prototype: listint_t *reverse_listint(listint_t **head);
+        Returns: a pointer to the first node of the reversed list
