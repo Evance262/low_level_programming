@@ -45,8 +45,11 @@ project 0x14. C - Bit manipulation
      Advanced Tasks
      --------------
 
-6.
+6. 
     a function that checks the endianness.
 
     Prototype: int get_endianness(void);
     Returns: 0 if big endian, 1 if little endian
+
+7. Crackme
+    Find the password for Crackme3
