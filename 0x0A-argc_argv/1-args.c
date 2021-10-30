@@ -1,16 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "holberton.h"
+
 /**
- * main - check the code
- * @argc: count of the arguments supplied to the program
- * @argv: an array of pointers to the
- * strings which are those arguments
- *
- * Return: Always 0.
+ * main - Prints the number of arguments passed into main
+ * @argc: Number of command line arguments
+ * @argv: Array name
+ * Return: 0
  */
+
 int main(int argc, char *argv[])
 {
-printf("args = %d\n", argc);
+int i;
+
+if (argc == 1)
+printf("%d\n", argc - 1);
+else
+{
+for (i = 0; *argv; i++, argv++)
+;
+
+printf("%d\n", i - 1);
+}
+
 return (0);
 }
