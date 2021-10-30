@@ -1,19 +1,19 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
-*main - entry point
-*Description: prints the alphabet in
-*lowercase, followed by a new line
-*Return: 0 on a successful compilation
-*/
+ * main -Entry point
+ * Description: prints all single digit numbers of
+ * base 10 from 0
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-int n = 10;
-if (n > 0)
+int a;
+
+for (a = 0; a < 10; a++)
 {
-if (n < 10)
-{
-printf("%d\n");
+printf("%d", a);
 }
-}
+putchar('\n');
 return (0);
 }
