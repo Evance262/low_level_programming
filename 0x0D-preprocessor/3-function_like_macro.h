@@ -1,14 +1,11 @@
-#include <stdio.h>
-/**
- * main - function-like macro ABS(x) that
- * computes the absolute value of a number x
- *
- * Return: Always 0.
- */
-#define ABS(x)
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
 
-int abs_value()
-{
-    ABS();
-    return (0);
-}
+/*
+ * Desc: Header file that defines a function-like macro ABS(x)
+ *       that computes the absolute value of a number x.
+ */
+
+#define ABS(x) ((x) < 0 ? (-x) : (x))
+
+#endif
