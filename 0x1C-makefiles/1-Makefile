@@ -3,5 +3,5 @@
 CC := gcc
 SRC := $(wildcard *.c)
 
-all: ${school.c SRC:%.c=%}
+all: ${SRC:%school.c=%}
 	${CC} school.c main.c -o school
