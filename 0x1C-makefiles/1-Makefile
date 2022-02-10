@@ -1,14 +1,8 @@
-.PHONY: all clean
+.PHONY: all
 
-CC = gcc
-
+CC := gcc
+CC := ${CC}
 SRC := $(wildcard *.c)
-BINS := $(SRC:%.c=%)
 
-all: ${BINS}
-
-%.o: %.c
-	${CC} -c $<
-
-clean:
-	rm -rvf *.o ${BINS}
+all: school.c 
+	${CC} school.c main.c -o school
