@@ -1,6 +1,9 @@
-.PHONY: all
+CC=gcc
+DEPS = m.h
+OBJ = school.c main.c
 
-CC = gcc
+%.o: %.c $(DEPS)
+	$(CC) -c -o $@ $<
 
-all: school.c
-	${CC} school.c -o school
+school: $(OBJ)
+	$(CC) -o $@ $^

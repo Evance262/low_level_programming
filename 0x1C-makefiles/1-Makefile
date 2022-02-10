@@ -1,0 +1,14 @@
+.PHONY: all clean
+
+CC = gcc
+
+SRC := $(wildcard *.c)
+BINS := $(SRC:%.c=%)
+
+all: ${BINS}
+
+%.o: %.c
+	${CC} -c $<
+
+clean:
+	rm -rvf *.o ${BINS}
