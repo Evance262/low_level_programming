@@ -1,7 +1,7 @@
 .PHONY: all
 
 CC := gcc
-SRC := .c
+SRC := $(wildcard *.c)
 
 all: school.c
 	${CC} main.c school.c -o school
